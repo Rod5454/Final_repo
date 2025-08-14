@@ -1,0 +1,99 @@
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px; 
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-header {
+    text-align: center;
+}
+
+.payment-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.payment-summary {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.payment-method-tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #777;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    flex: 1;
+    justify-content: center;
+}
+
+.tab.active {
+    color: #023e8a;
+    border-bottom-color: #023e8a;
+}
+
+.tab img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.payment-content {
+    padding: 0;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.modal-actions .btn-secondary {
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.modal-actions .btn-secondary:hover {
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,58 @@
+
+.qr-payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+}
+
+.info-text {
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem; 
+}
+
+.amount-box {
+    background-color: #f0f8ff;
+    border-radius: 8px; 
+    padding: 12px 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.amount-label {
+    color: #777;
+    font-weight: 500;
+    font-size: 0.8rem; 
+}
+
+.amount-value {
+    color: #023e8a;
+    font-weight: bold;
+    font-size: 1.3rem; 
+}
+
+.qr-code-image {
+    width: 180px; 
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loading-qr {
+    font-style: italic;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.wallet-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.wallet-logos img {
+    height: 25px; 
+}

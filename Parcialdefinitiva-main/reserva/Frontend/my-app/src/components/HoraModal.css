@@ -1,0 +1,48 @@
+
+
+.time-slots-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.time-slot-btn {
+  padding: 10px 15px;
+  border: 2px solid #023e8a;
+  background-color: #fff;
+  color: #023e8a;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.time-slot-btn.selected {
+  background-color: #023e8a;
+  color: #fff;
+}
+
+.time-slot-btn:hover:not(.selected) {
+  background-color: #e6f4e6;
+}
+
+.selected-date-info {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+.time-slot-btn.reserved {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    text-decoration: line-through;
+    border: 1px solid #ccc;
+}
+
+.time-slot-btn.reserved:hover {
+    background-color: #e0e0e0; 
+}
